@@ -1,1 +1,40 @@
-{     "devDependencies": {         "ember-paper": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-ember-paper",     "homepage": "https://github.com/npmtest/node-npmtest-ember-paper",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-ember-paper.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [ember-paper (v0.2.15)](https://github.com/miguelcobain/ember-paper#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-paper.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-paper) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-paper.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-paper)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "ember-paper": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-ember-paper",
+    "keywords": [
+        "coverage",
+        "test",
+        "ember-paper"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_ember_paper.js",
+    "name": "npmtest-ember-paper",
+    "nameAlias": "npmtest_ember_paper",
+    "nameOriginal": "npmtest-ember-paper",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-ember-paper.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
