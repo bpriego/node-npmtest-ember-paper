@@ -1,6 +1,6 @@
 # npmtest-ember-paper
 
-#### test coverage for  [ember-paper (v0.2.15)](https://github.com/miguelcobain/ember-paper#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-paper.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-paper) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-paper.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-paper)
+#### basic test coverage for  [ember-paper (v0.2.15)](https://github.com/miguelcobain/ember-paper#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-paper.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-paper) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-paper.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-paper)
 
 #### The Ember approach to Material Design.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ember-paper/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ember-paper/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ember-paper/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ember-paper/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-paper/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-paper/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ember-paper/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ember-paper/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-paper/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-paper/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ember-paper/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ember-paper/build/coverage.html/index.html)
 
@@ -117,7 +117,8 @@
         "start": "ember server",
         "test": "ember try:testall"
     },
-    "version": "0.2.15"
+    "version": "0.2.15",
+    "bin": {}
 }
 ```
 
